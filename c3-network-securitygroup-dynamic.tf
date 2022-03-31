@@ -41,4 +41,4 @@ resource "azurerm_network_security_group" "mynsg2" {
 }
 
 #security_rule.key=0 and security_rule.value = 22
-security_rule.key=1 and security_rule.value = 80
+#security_rule.key=1 and security_rule.value = 80
