@@ -1,5 +1,7 @@
 locals {
   ports = [22, 80, 8080, 7080, 7081]
+  
+  
 }
 
 resource "azurerm_network_security_group" "mynsg2" {
