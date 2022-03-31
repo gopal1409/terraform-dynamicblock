@@ -5,7 +5,7 @@ locals {
 resource "azurerm_network_security_group" "mynsg2" {
   name = "mynsg-2"
   location = azurerm_resource_group.myrg.location
-  resource_group_name = azurerm_network_security_group.mynsg.name
+  resource_group_name = azurerm_resource_group.myrg.name 
 
   dynamic "security_rule" {
   for_each = local.ports
